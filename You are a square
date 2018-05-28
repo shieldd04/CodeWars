@@ -1,5 +1,5 @@
 import math
-
+import random
 def is_square(n):
     if n < 0:
         print("{}:Negative numbers cannot be square numbers".format(n))
@@ -14,9 +14,11 @@ def is_square(n):
             print("{} is not a square number".format(n))
             return False
 
+
 is_square(-1)
 is_square(0)
 is_square(3)
 is_square(4)
 is_square(25)
 is_square(26)
+is_square(random.int(1, 100))
