@@ -1,0 +1,2 @@
+def in_array(a1, a2):
+    return sorted(list(set([w1 for w1 in a1 for w2 in a2 if w1 in w2])))
