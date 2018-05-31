@@ -1,12 +1,12 @@
 import math
-
+import random
 def is_square(n):
     if n < 0:
         print("{}:Negative numbers cannot be square numbers".format(n))
         return False
     else:
         squ = math.sqrt(n)
-        list1 = list(range(0, n + 1))
+        list1 = list(range(-1, n + 1))
         if squ in list1:
             print("{} is a square number".format(n))
             return True
@@ -20,3 +20,4 @@ is_square(3)
 is_square(4)
 is_square(25)
 is_square(26)
+is_square(random.randint(1, 100))
